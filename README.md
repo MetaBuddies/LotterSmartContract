@@ -12,7 +12,7 @@ ERC-721 non-fungible token：
     非同质化代币，拥有独一无二的token ID，与ERC-20相比，ERC-20的token可以彼此互换的，使用者A的50个token与使用者B的50个token是沒有差別的，但如果是ERC-721的因为每个token ID都不一样，所以不可以互换，视为独立的资产。
 
 ## Contracts
-合約內容存放在`contracts/`下：
+合约內容存放在`contracts/`下：
 - `Utils`：
     执行合约所有工具类
 - `Lotter.sol`：
@@ -41,7 +41,7 @@ ERC-721 non-fungible token：
 
 安装所需的相关组件：  
   
-需要在local端起一个以太坊的节点，推荐使用 `ganache-cli`，你可以通过 npm install來安裝。
+需要在local端起一个以太坊的节点，推荐使用 `ganache-cli`，你可以通过 npm install来安装。
 
 ```
 npm install -g ganache-cli
@@ -53,7 +53,7 @@ npm install -g ganache-cli
 npm install -g truffle
 ```
 
-安裝其余所需的套件:  
+安装其余所需的套件:  
 
 ```
 npm install
