@@ -10,7 +10,7 @@ import "./Ownable.sol";
 \/                     \/
 */
 pragma solidity >=0.7.0 <0.9.0;
-/**
+/*
  * @title Lotter
  * @author jiremy
  */
@@ -34,7 +34,7 @@ contract Lotter is ERC721Enumerable, Ownable {
 
     string _name = "Lotter";
     string _symbol = "LotterNft";
-    /**
+    /*
      * @notice Generate your blind box from here.
      * @return Return your token ID after the pre-sale ends.
      */
@@ -51,7 +51,7 @@ contract Lotter is ERC721Enumerable, Ownable {
     |               Presale             |
     |__________________________________*/
 
-    /**
+    /*
      * @notice The pre-sale method is used to mint for whitelisted users.
      * He is limited to whitelisted users.
      * @param _mintAmount The total amount of one mint.
@@ -85,7 +85,7 @@ contract Lotter is ERC721Enumerable, Ownable {
     |               Public-sale         |
     |__________________________________*/
 
-    /**
+    /*
      * @notice The mint method is used to mint for public users.
      * Anyone can participate
      * @param _mintAmount The total amount of one mint.
@@ -183,7 +183,7 @@ contract Lotter is ERC721Enumerable, Ownable {
         require(_count < maxSupply - totalSupply);
         whitelistReserved = _count;
     }
-    /**
+    /*
      * @notice Here is how the project party withdraws funds
      * He only allows the contract owner to operate
      * @param No have param
@@ -196,7 +196,7 @@ contract Lotter is ERC721Enumerable, Ownable {
     function getBalance() public view onlyOwner returns (uint256) {
         return address(this).balance;
     }
-    /**
+    /*
      * @notice Determine if it is during a whitelist sale
      * The return parameter is a boolean value
      * @param No have param
